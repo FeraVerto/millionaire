@@ -1,6 +1,7 @@
 import {Dispatch} from "react";
 
 const GET_NEXT_QUESTION = 'millionaire/bodyGame/GET_NETX_QUESTION';
+const RESET_SCORE = 'millionaire/bodyGame/RESET_SCORE';
 
 type ActonType = any
 type initialStateType = typeof initialState
@@ -78,6 +79,28 @@ let initialState = {
                     },
                 ]
             },
+            {
+                text: "Вопрос №4",
+                score: 10000,
+                answers: [
+                    {
+                        text: "Вариант №1",
+                        isRight: true
+                    },
+                    {
+                        text: "Вариант №2",
+                        isRight: false
+                    },
+                    {
+                        text: "Вариант №3",
+                        isRight: false
+                    },
+                    {
+                        text: "Вариант №4",
+                        isRight: false
+                    },
+                ]
+            },
         ]
     }
 };
@@ -89,7 +112,14 @@ const bodyGameReducer = (state = initialState, action: ActonType): initialStateT
             return {
                 ...state,
                 i: state.i + 1,
-                totalScore: state.totalScore += 2000
+                totalScore: state.totalScore += state.questionBlock.questions[state.i].score
+            }
+
+        case RESET_SCORE:
+            return {
+                ...state,
+                i: 0,
+                totalScore: 0
             }
 
         default:
@@ -98,8 +128,11 @@ const bodyGameReducer = (state = initialState, action: ActonType): initialStateT
 }
 
 export const getNextQuestionAC = () => {
-    console.log("Hi")
     return {type: GET_NEXT_QUESTION}
+};
+
+export const resetScoreAC = () => {
+    return {type: RESET_SCORE}
 };
 
 export const getAuthUserData = () => async (dispatch: Dispatch<ActonType>) => {
