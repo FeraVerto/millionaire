@@ -1,28 +1,29 @@
-import React from 'react'
-
-type variantType = {
+export type VariantType = {
     text: string,
     isRight: boolean
 }
 
-type answersType = Array<variantType>
+export type AnswersType = Array<VariantType>
 
-type questionType = {
+export type QuestionType = {
     text: string,
     score: number,
-    answers: answersType
+    answers: AnswersType
 }
-type questionsType = Array<questionType>
 
-type StateType = {
+export type QuestionsType = Array<QuestionType>
+
+export type StateType = {
     totalScore: number,
+    i: number,
     questionBlock: {
-        questions: questionsType
+        questions: QuestionsType
     }
 }
 
 export let state: StateType = {
     totalScore: 0,
+    i: 0,
     questionBlock: {
         questions: [
             {
@@ -96,37 +97,3 @@ export let state: StateType = {
     }
 }
 
-/*
--20 => -20
--32 => -23
-0 => 0
-10 => 10
-29394 => 23499
-* */
-
-/*if (n === 0) newN.splice(i, 1)*/
-
-/*
-function minPermutation(n) {
-    let arrarrarr = []
-    let str = String(n)
-    let newN = str.split('')
-
-    let newArr = newN.map((n, i) => +n)
-
-    newArr[0] =
-
-    let newnewN =  newN.sort((n, m) => {
-        if (n < m) {
-            return -1
-        }
-        if (n > m) {
-            return 1
-        }
-        return 0
-    })
-
-    return Number(newnewN.join(''))
-}
-
-minPermutation(29394)*/

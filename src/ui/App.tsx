@@ -3,7 +3,9 @@ import s from './App.module.css';
 import {BodyGame} from "./BodyGame/BodyGame";
 import {Navbar} from "./Navbar/Navbar";
 
-function App() {
+
+
+const App: React.FC = (props) => {
   return (
     <div className={s.app}>
 

@@ -1,4 +1,4 @@
-import { Store, createStore, combineReducers, applyMiddleware, compose } from "redux";
+import { Store, createStore, combineReducers } from "redux";
 import bodyGameReducer from "./bodyGame-reducer";
 import navbarReducer from "./navbar-reducer";
 

@@ -1,11 +1,16 @@
 import {Dispatch} from "react";
 
-const GET_CAPTCHA_URL_SUCCESS = 'millionaire/bodyGame/';
+const GET_NEXT_QUESTION = 'millionaire/bodyGame/GET_NETX_QUESTION';
 
 type ActonType = any
+type initialStateType = typeof initialState
 
 let initialState = {
+    totalScore: 0,
+    i: 0,
     questionBlock: {
+        active: true,
+
         questions: [
             {
                 text: "Вопрос №1",
@@ -35,11 +40,11 @@ let initialState = {
                 answers: [
                     {
                         text: "Вариант №1",
-                        isRight: true
+                        isRight: false
                     },
                     {
                         text: "Вариант №2",
-                        isRight: false
+                        isRight: true
                     },
                     {
                         text: "Вариант №3",
@@ -73,27 +78,34 @@ let initialState = {
                     },
                 ]
             },
-
         ]
     }
 };
 
-const bodyGameReducer = (state = initialState, action: ActonType) => {
+const bodyGameReducer = (state = initialState, action: ActonType): initialStateType => {
     switch (action.type) {
 
-        case GET_CAPTCHA_URL_SUCCESS: {
-            return {}
-        }
+        case GET_NEXT_QUESTION:
+            return {
+                ...state,
+                i: state.i + 1,
+                totalScore: state.totalScore += 2000
+            }
 
         default:
             return state;
     }
 }
 
-export const setAuthUserData = () => ({});
+export const getNextQuestionAC = () => {
+    console.log("Hi")
+    return {type: GET_NEXT_QUESTION}
+};
 
 export const getAuthUserData = () => async (dispatch: Dispatch<ActonType>) => {
-    dispatch(setAuthUserData());
+    /*dispatch(setAuthUserData());*/
 }
 
 export default bodyGameReducer;
+
+
