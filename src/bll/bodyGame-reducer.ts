@@ -2,6 +2,7 @@ import {Dispatch} from "react";
 
 const GET_NEXT_QUESTION = 'millionaire/bodyGame/GET_NETX_QUESTION';
 const RESET_SCORE = 'millionaire/bodyGame/RESET_SCORE';
+const TOGGLE_IS_ACTIVE = 'millionaire/bodyGame/TOGGLE_IS_ACTIVE';
 
 type ActonType = any
 type initialStateType = typeof initialState
@@ -10,8 +11,7 @@ let initialState = {
     totalScore: 0,
     i: 0,
     questionBlock: {
-        active: true,
-
+        isActive: true,
         questions: [
             {
                 text: "Вопрос №1",
@@ -40,19 +40,19 @@ let initialState = {
                 score: 5000,
                 answers: [
                     {
-                        text: "Вариант №1",
+                        text: "Вариант №21",
                         isRight: false
                     },
                     {
-                        text: "Вариант №2",
+                        text: "Вариант №22",
                         isRight: true
                     },
                     {
-                        text: "Вариант №3",
+                        text: "Вариант №23",
                         isRight: false
                     },
                     {
-                        text: "Вариант №4",
+                        text: "Вариант №24",
                         isRight: false
                     },
                 ]
@@ -62,19 +62,19 @@ let initialState = {
                 score: 10000,
                 answers: [
                     {
-                        text: "Вариант №1",
+                        text: "Вариант №31",
                         isRight: true
                     },
                     {
-                        text: "Вариант №2",
+                        text: "Вариант №32",
                         isRight: false
                     },
                     {
-                        text: "Вариант №3",
+                        text: "Вариант №33",
                         isRight: false
                     },
                     {
-                        text: "Вариант №4",
+                        text: "Вариант №34",
                         isRight: false
                     },
                 ]
@@ -84,19 +84,19 @@ let initialState = {
                 score: 10000,
                 answers: [
                     {
-                        text: "Вариант №1",
+                        text: "Вариант №41",
                         isRight: true
                     },
                     {
-                        text: "Вариант №2",
+                        text: "Вариант №42",
                         isRight: false
                     },
                     {
-                        text: "Вариант №3",
+                        text: "Вариант №43",
                         isRight: false
                     },
                     {
-                        text: "Вариант №4",
+                        text: "Вариант №44",
                         isRight: false
                     },
                 ]
@@ -119,7 +119,20 @@ const bodyGameReducer = (state = initialState, action: ActonType): initialStateT
             return {
                 ...state,
                 i: 0,
-                totalScore: 0
+                totalScore: 0,
+                questionBlock: {
+                    ...state.questionBlock,
+                    isActive: false
+                }
+            }
+
+        case TOGGLE_IS_ACTIVE:
+            return {
+                ...state,
+                questionBlock: {
+                    ...state.questionBlock,
+                    isActive: true
+                }
             }
 
         default:
@@ -127,17 +140,15 @@ const bodyGameReducer = (state = initialState, action: ActonType): initialStateT
     }
 }
 
-export const getNextQuestionAC = () => {
-    return {type: GET_NEXT_QUESTION}
-};
+export const getNextQuestionAC = () => ({type: GET_NEXT_QUESTION});
 
-export const resetScoreAC = () => {
-    return {type: RESET_SCORE}
-};
+export const resetScoreAC = () => ({type: RESET_SCORE});
 
-export const getAuthUserData = () => async (dispatch: Dispatch<ActonType>) => {
-    /*dispatch(setAuthUserData());*/
-}
+export const toggleIsActiveAC = () => ({type: TOGGLE_IS_ACTIVE})
+
+/*export const getAuthUserData = () => async (dispatch: Dispatch<ActonType>) => {
+    /!*dispatch(setAuthUserData());*!/
+}*/
 
 export default bodyGameReducer;
 

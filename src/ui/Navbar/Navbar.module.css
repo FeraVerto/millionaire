@@ -1,0 +1,8 @@
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating .active {
+    background-color: red;
+}

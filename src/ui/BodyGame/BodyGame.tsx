@@ -1,9 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../bll/store";
-import {AnswersType, QuestionsType, QuestionType, StateType, VariantType} from "../../bll/state";
+import {QuestionsType} from "../../bll/state";
 import {getNextQuestionAC, resetScoreAC} from "../../bll/bodyGame-reducer";
-import {useEffect} from "react";
-import {Button} from "./ButtonWithAnswer/ButtonWithAnswer";
+import {ButtonWithAnswer} from "./ButtonWithAnswer/ButtonWithAnswer";
 
 export const BodyGame = () => {
 
@@ -21,14 +20,15 @@ export const BodyGame = () => {
 
     return (
         <div>
-            <div>{
-                questions[i].text
-            }</div>
+            <div>
+                {
+                    questions[i].text
+                }
+            </div>
             <div onClick={(e) => onAnswerOptionClick(e)}>
-                <button data-answer={questions[i].answers[0].isRight}>Вариант 1</button>
-                <button data-answer={questions[i].answers[1].isRight}>Вариант 2</button>
-                <button data-answer={questions[i].answers[2].isRight}>Вариант 3</button>
-                <button data-answer={questions[i].answers[3].isRight}>Вариант 4</button>
+                {
+                    questions[i].answers.map(a => <ButtonWithAnswer isRight={a.isRight} text={a.text}/>)
+                }
             </div>
         </div>
     )
