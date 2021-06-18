@@ -3,6 +3,7 @@ import {AppStateType} from "../../bll/store";
 import {QuestionsType} from "../../bll/state";
 import {getNextQuestionAC, resetScoreAC} from "../../bll/bodyGame-reducer";
 import {ButtonWithAnswer} from "./ButtonWithAnswer/ButtonWithAnswer";
+import React from "react";
 
 export const BodyGame = () => {
 
@@ -20,16 +21,22 @@ export const BodyGame = () => {
 
     return (
         <div>
-            <div>
-                {
-                    questions[i].text
-                }
-            </div>
-            <div onClick={(e) => onAnswerOptionClick(e)}>
-                {
-                    questions[i].answers.map(a => <ButtonWithAnswer isRight={a.isRight} text={a.text}/>)
-                }
-            </div>
+            {
+                i === 15
+                    ? <div>победа!</div>
+                    : <div>
+                        <div>
+                            {
+                                questions[i].text
+                            }
+                        </div>
+                        <div onClick={(e) => onAnswerOptionClick(e)}>
+                            {
+                                questions[i].answers.map(a => <ButtonWithAnswer isRight={a.isRight} text={a.text}/>)
+                            }
+                        </div>
+                    </div>
+            }
         </div>
     )
 }

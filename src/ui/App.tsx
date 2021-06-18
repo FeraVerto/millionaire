@@ -12,6 +12,9 @@ import {AppStateType} from "../bll/store";
 const App: React.FC = (props) => {
 
     let isActive = useSelector<AppStateType, boolean>(state => state.bodyGame.questionBlock.isActive)
+    let totalScore = useSelector<AppStateType, number>(state => state.bodyGame.totalScore)
+    const i = useSelector<AppStateType, number>((state) => state.bodyGame.i)
+
 
     return (
         <div className={s.app}>
@@ -24,6 +27,7 @@ const App: React.FC = (props) => {
                 <div className={s.nav}>
                     <Navbar/>
                 </div>
+
                 <div className={s.body_game}>
                     <Route exact path="/" component={() => <StartGame/>}/>
                 </div>

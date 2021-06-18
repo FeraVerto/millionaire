@@ -3,6 +3,6 @@
     flex-direction: column;
 }
 
-.rating .active {
-    background-color: red;
+.active {
+    border: 2px solid red;
 }
