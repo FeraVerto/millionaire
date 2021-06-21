@@ -5,6 +5,7 @@ import {getNextQuestionAC, resetScoreAC} from "../../bll/bodyGame-reducer";
 import {ButtonWithAnswer} from "./ButtonWithAnswer/ButtonWithAnswer";
 import React from "react";
 import s from './BodyGame.module.css'
+import {randomColor} from "../../utils/randomColor";
 
 export const BodyGame = () => {
 
@@ -20,28 +21,24 @@ export const BodyGame = () => {
         }
     }
 
-    let randomColor = () => {
-        let arr = ['#cfff00', '#ff03d7', '#fffb00']
-        let item = arr[Math.floor(Math.random()*arr.length)];
-        return item
-    }
-
     return (
-        <div className={s.body_game} style={{ backgroundColor: randomColor()}}>
+        <div className={s.body_game} style={{backgroundColor: randomColor(['#cfff00', '#ff03d7', '#fffb00', '#00ffee'])}}>
             {
                 i === 15
                     ? <div>победа!</div>
-                    : <div>
+                    : <div className={s.quiz_block}>
                         <div className={s.question_text}>
                             {
                                 questions[i].text
                             }
                         </div>
-                        <div onClick={(e) => onAnswerOptionClick(e)}>
+                        <div className={s.answer_block}
+                             style={{color: randomColor(['#cfff00', '#ff03d7', '#fffb00', '#00ffee'])}}
+                             onClick={(e) => onAnswerOptionClick(e)}>
                             {
-                                questions[i].answers.map(a => <ButtonWithAnswer className={s.answer}
-                                                                                isRight={a.isRight}
-                                                                                text={a.text}/>)
+                                questions[i].answers.map(a => <ButtonWithAnswer
+                                    isRight={a.isRight}
+                                    text={a.text}/>)
                             }
                         </div>
                     </div>

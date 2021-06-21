@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700;900&display=swap');
 
 .app {
+    margin: 0 30px;
     height: 100vh;
 
     display: grid;
@@ -40,7 +41,8 @@
 
 .nav {
     grid-area: nav;
-    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
 }
 
 .game {

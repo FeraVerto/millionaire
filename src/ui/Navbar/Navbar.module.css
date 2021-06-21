@@ -1,9 +1,12 @@
 .rating {
     margin: 0;
     padding: 0;
+    padding-left: 60px;
+
 
     display: flex;
     flex-direction: column;
+
 
     list-style: none;
 }

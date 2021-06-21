@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 .body_game {
     height: 60%;
-    width: 50%;
+    width: 80%;
+}
+
+.quiz_block {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .question_text {
+    padding: 10px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
     color: var(--primary-black-color);
+}
+
+.answer_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

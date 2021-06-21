@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.answer {
+    margin-bottom: 10px;
+    width: 48%;
+    height: 150px;
+
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: inherit;
+
+    background-color: var(--primary-black-color);
+    border: 1px solid transparent;
+}
+
+.answer:hover {
+    opacity: 0.9;
+}
