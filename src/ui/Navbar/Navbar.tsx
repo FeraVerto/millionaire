@@ -11,7 +11,7 @@ export const Navbar = () => {
         <ul className={s.rating}>
             {
                 stateScore.map((score, i) => {
-                    return <li key={i} className={id == (i + 1) ? s.active : undefined}>{score}</li>
+                    return <li key={i} className={id == (i + 1) ? s.active : s.score}>{score}</li>
                 }).reverse()
             }
         </ul>
