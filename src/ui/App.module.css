@@ -55,7 +55,18 @@
 
 .app_footer {
     grid-area: footer;
-    border: 2px solid blue;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.social li {
+    margin-right: 30px;
 }
 
 

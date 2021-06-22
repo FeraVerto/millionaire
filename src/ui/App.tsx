@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {NavLink, Route} from 'react-router-dom';
 import s from './App.module.css';
 import {BodyGame} from "./BodyGame/BodyGame";
 import {Navbar} from "./Navbar/Navbar";
@@ -28,7 +28,8 @@ const App: React.FC = (props) => {
                 </div>
 
                 <div className={s.game}>
-                    <Route exact path="/" component={() => <StartGame/>}/>
+                    {/*<Route exact path="/" component={() => <StartGame/>}/>*/}
+                    <NavLink to='/game'>Начнем игру</NavLink>
                 </div>
                 {
                     !isActive
@@ -42,7 +43,11 @@ const App: React.FC = (props) => {
             </main>
 
             <footer className={s.app_footer}>
-                Контакты
+                <ul className={s.social}>
+                    <li>Гитхаб</li>
+                    <li>Линкдин</li>
+                    <li>Телеграм</li>
+                </ul>
             </footer>
 
         </div>
