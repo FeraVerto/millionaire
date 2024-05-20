@@ -1,29 +1,29 @@
 @font-face {
-    font-family: 'Alegreya Sans Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Alegreya Sans Black'), url('static/fonts/Alegreya_Sans/AlegreyaSans-Light.ttf') format('ttf');
+  font-family: 'Alegreya Sans Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Alegreya Sans Black'),
+    url('static/fonts/Alegreya_Sans/AlegreyaSans-Light.ttf') format('ttf');
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--primary-black-color);
-    color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-perple-color);
+  color: white;
+
+  background-image: url('./static/image/bcg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
-    font-family: Alegreya Sans Black, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-:root {
-    --primary-black-color: #000;
-    --light-green-color: #cfff00;
-    --light-pink-color: #ff03d7;
-    --light-yellow-color: #fffb00;
+  font-family: Alegreya Sans Black, source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
 }

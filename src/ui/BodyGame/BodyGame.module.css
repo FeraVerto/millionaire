@@ -1,28 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-.body_game {
-    height: 60%;
-    width: 80%;
+.quiz_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.quiz_block {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.quiz_block img {
+  margin-bottom: 20px;
 }
 
 .question_text {
-    padding: 10px;
+  padding: 10px;
+  height: 80px;
 
-    font-family: 'Space Mono', monospace;
-    font-size: 2rem;
-    color: var(--primary-black-color);
+  font-family: 'Space Mono', monospace;
+  font-size: 2.2rem;
+  color: #421b75;
+}
+
+.quiz_img {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.quiz_img img {
+  width: 100%;
+  background-size: cover;
 }
 
 .answer_block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.success_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success_block div {
+  font-size: 3rem;
+  color: green;
+  border-color: green;
+}
+
+.success_block img {
+  border-radius: 15px;
+  margin-bottom: 20px;
 }

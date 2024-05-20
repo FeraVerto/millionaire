@@ -1,0 +1,20 @@
+.game_over {
+    display: flex;
+    flex-direction: column;
+}
+
+.game_over span {
+    display: block;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 5rem;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 6px solid red;
+    border-radius: 15px;
+}
+
+.game_over img {
+    border-radius: 15px;
+}

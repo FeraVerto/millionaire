@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 .answer {
-    margin-bottom: 10px;
-    width: 48%;
-    height: 150px;
+  margin-bottom: 10px;
+  width: 48%;
+  min-width: 380px;
+  min-height: 60px;
 
-    font-family: 'Space Mono', monospace;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: inherit;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #421b75;
+  font-weight: bold;
 
-    background-color: var(--primary-black-color);
-    border: 1px solid transparent;
+  background-color: #ffd902;
+  border: 1px solid transparent;
+  border-radius: 15px;
 }
 
 .answer:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }

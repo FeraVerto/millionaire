@@ -1,23 +1,36 @@
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+}
+
 .rating {
-    margin: 0;
-    padding: 0;
-    padding-left: 60px;
+  height: 720px;
+  margin: 0;
+  margin: 0 20px;
+  padding: 10px;
+  width: 210px;
 
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
-
-
-    list-style: none;
+  list-style: none;
+  background-color: rgba(241, 188, 89, 0.7);
+  border-radius: 15px;
 }
 
 .score {
-    font-size: 2rem;
+  font-size: 2.2rem;
+  color: var(--light-white-color);
+  font-weight: bold;
 }
 
 .active {
-    background-color: var(--light-pink-color);
-    color: var(--primary-black-color);
-    font-weight: bold;
-    font-size: 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffd902;
+  border-radius: 15px;
+  color: #421b75;
+  font-weight: bold;
+  font-size: 3rem;
 }
