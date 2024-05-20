@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://FeraVerto.github.io/millionaire", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
