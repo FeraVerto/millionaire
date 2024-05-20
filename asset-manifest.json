@@ -1,23 +1,34 @@
 {
   "files": {
-    "main.css": "/millionaire/static/css/main.3f8140a8.chunk.css",
-    "main.js": "/millionaire/static/js/main.7cf095f9.chunk.js",
-    "main.js.map": "/millionaire/static/js/main.7cf095f9.chunk.js.map",
-    "runtime-main.js": "/millionaire/static/js/runtime-main.144d75e7.js",
-    "runtime-main.js.map": "/millionaire/static/js/runtime-main.144d75e7.js.map",
-    "static/js/2.ecf9149b.chunk.js": "/millionaire/static/js/2.ecf9149b.chunk.js",
-    "static/js/2.ecf9149b.chunk.js.map": "/millionaire/static/js/2.ecf9149b.chunk.js.map",
-    "static/js/3.977e0631.chunk.js": "/millionaire/static/js/3.977e0631.chunk.js",
-    "static/js/3.977e0631.chunk.js.map": "/millionaire/static/js/3.977e0631.chunk.js.map",
+    "main.css": "/millionaire/static/css/main.55f3fc84.css",
+    "main.js": "/millionaire/static/js/main.5d764801.js",
+    "static/js/453.ed3810f9.chunk.js": "/millionaire/static/js/453.ed3810f9.chunk.js",
+    "static/media/samec..jpg": "/millionaire/static/media/samec..a684744a2bb273d2bb7d.jpg",
+    "static/media/bcg.png": "/millionaire/static/media/bcg.c271f0506854e0737b88.png",
+    "static/media/ihwill.png": "/millionaire/static/media/ihwill.63834ae96334396edcb3.png",
+    "static/media/AlegreyaSans-Light.ttf": "/millionaire/static/media/AlegreyaSans-Light.e2872092ea203d777079.ttf",
+    "static/media/kotletki.png": "/millionaire/static/media/kotletki.eb95ec4e69ca6cecf19c.png",
+    "static/media/natasha.jpg": "/millionaire/static/media/natasha.b3e368426d8b58b8db1b.jpg",
+    "static/media/rybov.jpg": "/millionaire/static/media/rybov.691ecb69f9c39a9f8ef7.jpg",
+    "static/media/kanevskij.jpeg": "/millionaire/static/media/kanevskij.7b234e7446b365e378eb.jpeg",
+    "static/media/4monja.jpg": "/millionaire/static/media/4monja.84f793b2a204d2fb47eb.jpg",
+    "static/media/vahue.jpg": "/millionaire/static/media/vahue.508ed66ab331f3f8c1bb.jpg",
+    "static/media/chinazes.jpg": "/millionaire/static/media/chinazes.d9f784452b958632e3e4.jpg",
+    "static/media/fat_oh.jpeg": "/millionaire/static/media/fat_oh.90c7522b8afd21b2e5d3.jpeg",
+    "static/media/deshevka.jpg": "/millionaire/static/media/deshevka.257f635c1230a13b6047.jpg",
+    "static/media/tinkoff.jpg": "/millionaire/static/media/tinkoff.91e7c51f53c47a51452f.jpg",
+    "static/media/threeHbuks.jpg": "/millionaire/static/media/threeHbuks.82be3c74d5a40fd3e7d3.jpg",
+    "static/media/molodec.jpg": "/millionaire/static/media/molodec.b6fe5a3910d7a53bf4e6.jpg",
+    "static/media/mojsemen.jpg": "/millionaire/static/media/mojsemen.39d48926c571c01038cb.jpg",
+    "static/media/syhnost.jpg": "/millionaire/static/media/syhnost.586e4b687e8c2a30423a.jpg",
+    "static/media/idukreke.jpg": "/millionaire/static/media/idukreke.a6b074594770094b7c4a.jpg",
     "index.html": "/millionaire/index.html",
-    "static/css/main.3f8140a8.chunk.css.map": "/millionaire/static/css/main.3f8140a8.chunk.css.map",
-    "static/js/2.ecf9149b.chunk.js.LICENSE.txt": "/millionaire/static/js/2.ecf9149b.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/millionaire/static/media/AlegreyaSans-Light.e2872092.ttf"
+    "main.55f3fc84.css.map": "/millionaire/static/css/main.55f3fc84.css.map",
+    "main.5d764801.js.map": "/millionaire/static/js/main.5d764801.js.map",
+    "453.ed3810f9.chunk.js.map": "/millionaire/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.144d75e7.js",
-    "static/js/2.ecf9149b.chunk.js",
-    "static/css/main.3f8140a8.chunk.css",
-    "static/js/main.7cf095f9.chunk.js"
+    "static/css/main.55f3fc84.css",
+    "static/js/main.5d764801.js"
   ]
 }
