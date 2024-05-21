@@ -6,7 +6,7 @@ type StartGameType = {};
 
 export const StartGame = () => {
   return (
-    <NavLink className={s.button} to="/game">
+    <NavLink className={s.button} to="/millionaire/game">
       Стартуем!
     </NavLink>
   );

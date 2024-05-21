@@ -25,7 +25,7 @@ const App: React.FC = (props) => {
     <div className={s.app_container}>
       <div className={s.app_header}>
         <NavLink
-          to="/"
+          to="/millionaire/"
           className={s.app_start_page_button}
           onClick={resetScoreHandler}
         >
@@ -44,8 +44,8 @@ const App: React.FC = (props) => {
               <GameOver />
             ) : (
               <Routes>
-                <Route path="/" element={<StartGame />} />
-                <Route path="/game" element={<BodyGame />} />
+                <Route path="/millionaire/" element={<StartGame />} />
+                <Route path="/millionaire/game" element={<BodyGame />} />
               </Routes>
             )}
           </div>
