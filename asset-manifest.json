@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/millionaire/static/css/main.10d5fc15.css",
-    "main.js": "/millionaire/static/js/main.4493447c.js",
+    "main.js": "/millionaire/static/js/main.c72466c1.js",
     "static/js/453.ed3810f9.chunk.js": "/millionaire/static/js/453.ed3810f9.chunk.js",
     "static/media/samec..jpg": "/millionaire/static/media/samec..a684744a2bb273d2bb7d.jpg",
     "static/media/bcg.png": "/millionaire/static/media/bcg.c271f0506854e0737b88.png",
@@ -24,11 +24,11 @@
     "static/media/idukreke.jpg": "/millionaire/static/media/idukreke.a6b074594770094b7c4a.jpg",
     "index.html": "/millionaire/index.html",
     "main.10d5fc15.css.map": "/millionaire/static/css/main.10d5fc15.css.map",
-    "main.4493447c.js.map": "/millionaire/static/js/main.4493447c.js.map",
+    "main.c72466c1.js.map": "/millionaire/static/js/main.c72466c1.js.map",
     "453.ed3810f9.chunk.js.map": "/millionaire/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10d5fc15.css",
-    "static/js/main.4493447c.js"
+    "static/js/main.c72466c1.js"
   ]
 }
